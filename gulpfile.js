@@ -5,10 +5,6 @@ var gulp = require('gulp');
 // Include plugins
 var plugins = require('gulp-load-plugins')();
 
-// Variables de chemins
-var source = './src'; // dossier de travail
-var destination = './dist'; // dossier à livrer
-
 gulp.task('sass', function () {
     return gulp.src('./sass/**/*.scss')
         .pipe(plugins.sass())
