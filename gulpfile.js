@@ -4,6 +4,7 @@ var gulp = require('gulp');
 
 // Include plugins
 var plugins = require('gulp-load-plugins')();
+var livereload = require('gulp-livereload');
 
 gulp.task('sass', function () {
     return gulp.src('./sass/**/*.scss')
@@ -13,7 +14,8 @@ gulp.task('sass', function () {
         .pipe(plugins.autoprefixer({
             browsers: ['last 3 versions'],
         }))
-        .pipe(gulp.dest('./stylesheets'));
+        .pipe(gulp.dest('./stylesheets'))
+        .pipe(livereload());
 });
 
 // Tâche "minify" = minification CSS (destination -> destination)
@@ -30,6 +32,7 @@ gulp.task('build', ['css']);
 gulp.task('prod', ['build',  'minify']);
 
 gulp.task('watch', function () {
+    livereload.listen();
     gulp.watch('./sass/**/*.scss', ['sass']);
 });
 
