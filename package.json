@@ -9,13 +9,18 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "babel-preset-es2015": "^6.22.0",
     "gulp": "latest",
-    "gulp-load-plugins": "latest",
-    "gulp-csso": "latest",
-    "gulp-sass": "latest",
-    "gulp-csscomb": "latest",
-    "gulp-cssbeautify": "latest",
     "gulp-autoprefixer": "latest",
-    "gulp-livereload": "latest"
+    "gulp-babel": "^6.1.2",
+    "gulp-cssbeautify": "latest",
+    "gulp-csscomb": "latest",
+    "gulp-csso": "latest",
+    "gulp-livereload": "latest",
+    "gulp-load-plugins": "latest",
+    "gulp-sass": "latest",
+    "gulp-uglify": "^2.0.1",
+    "gulp-watch": "^4.3.11",
+    "pump": "^1.0.2"
   }
 }
