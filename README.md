@@ -1,6 +1,6 @@
 # gulp-starter
 
-This is a basic gulp configuration for starting up with scss.
+This is a basic gulp configuration for starting up with scss (gulp-sass) and es2015 (babel).
 
 ## Installation
 * Move the content from gulp-starter folder to the scss / css project
